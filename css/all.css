@@ -381,8 +381,8 @@ img {
 .text-large {
   position: relative;
   display: flex;
-  margin-top: 2vw;
-  margin-bottom: auto;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1140,7 +1140,7 @@ img {
   line-height: 2vw
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: px) {
   .bottle {
     height: 50vh
   }
