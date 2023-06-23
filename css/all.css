@@ -93,11 +93,8 @@ img {
   right: 0;
   bottom: 0;
   z-index: 2;
-  display: block;
-  width: 28vh;
-  width: 28vh;
-  width: 80%;
-  height: 62vh;
+  width: 50%;
+  height: 100%;
   max-height: none;
   max-width: none;
   min-height: auto;
@@ -1266,7 +1263,7 @@ img {
   .bottle {
     z-index: 1;
     ;
-    height: 120vw;
+    
     margin-top: 7vw
   }
 
