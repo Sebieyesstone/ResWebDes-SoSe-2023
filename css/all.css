@@ -628,7 +628,7 @@ img {
 }
 
 .text-block-wulf {
- 
+  padding-bottom: .5vw;
   align-self: center;
   font-family: "Vulf Sans", sans-serif;
   color: #feeee2;
