@@ -7,9 +7,24 @@ html, body{
   max-width: 100%;
   overflow-x: hidden;
 }
-body {
+/*body {
   margin: 0;
   cursor: url('./../images/cursor.png'), auto;
+}*/
+
+body {
+  margin: 0;
+}
+#customCursor {
+  pointer-events: none; 
+  z-index: 10000;
+  position: fixed;  
+}
+.bottle-section {
+  z-index: 9999;  /* Setze einen niedrigeren z-index für die Elemente in der bottle-section */
+}
+.bottle-section img {
+  pointer-events: none;  /* Verhindere, dass die Bilder in der bottle-section Mausereignisse empfangen */
 }
 
 a {
@@ -589,11 +604,11 @@ img {
 }
 
 .wtf-scrolling.left {
-  left: -20vw;
+  left: -37.5vw;
   top: 0;
   right: auto;
   bottom: 0;
-  width: 45vw;
+  width: 80vw;
   margin-top: 0;
   margin-left: 0;
   justify-content: center;
@@ -604,16 +619,16 @@ img {
 .wtf-scrolling.right {
   left: auto;
   top: 0;
-  right: -20vw;
+  right: -37.5vw;
   bottom: 0;
-  width: 45vw;
+  width: 80vw;
   margin-top: auto;
   justify-content: center;
-  transform: rotate(90deg)
+  transform: rotate(90deg);
 }
 
 .text-block-wulf {
-  padding-bottom: .5vw;
+ 
   align-self: center;
   font-family: "Vulf Sans", sans-serif;
   color: #feeee2;
@@ -1421,17 +1436,16 @@ img {
     justify-content: flex-start;
     align-items: center
   }
-
   .text-block-wulf.low {
-    font-size: 4vw;
-    line-height: 4vw
+    padding-right: 1vw;
+    transform: translate(0, 0);
+    text-align: right;
   }
-
+  
   .text-block-wulf.mobile {
     font-size: 4vw;
-    line-height: 4vw
+    line-height: 5vw;
   }
-
   .scroll-section-border-inner.mobile {
     width: 84vw;
     margin-top: 4vw;

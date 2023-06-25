@@ -53,6 +53,13 @@ window.addEventListener('scroll', function () {
     }
   }
 });
+window.addEventListener('mousemove', function(e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  document.getElementById('customCursor').style.left = x + 'px';
+  document.getElementById('customCursor').style.top = y + 'px';
+  document.getElementById('customCursor').style.display = 'block';
+});
 
 // window.addEventListener('scroll', function () {
 //   var textContainer = document.querySelector('.text-container-scroll');
