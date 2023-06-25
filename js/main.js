@@ -61,6 +61,17 @@ window.addEventListener('mousemove', function(e) {
   document.getElementById('customCursor').style.display = 'block';
 });
 
+window.addEventListener('DOMContentLoaded', function() {
+  var customCursor = document.getElementById('customCursor');
+
+  document.addEventListener('mousemove', function(e) {
+    var x = e.clientX;
+    var y = e.clientY;
+    customCursor.style.left = x + 'px';
+    customCursor.style.top = y + 'px';
+  });
+});
+
 // window.addEventListener('scroll', function () {
 //   var textContainer = document.querySelector('.text-container-scroll');
 //   var scrollPosition = window.scrollY;
