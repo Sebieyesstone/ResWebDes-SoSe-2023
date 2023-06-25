@@ -70,7 +70,10 @@ window.addEventListener('DOMContentLoaded', function() {
     customCursor.style.left = x + 'px';
     customCursor.style.top = y + 'px';
   });
+
+  customCursor.style.display = 'block';
 });
+
 
 // window.addEventListener('scroll', function () {
 //   var textContainer = document.querySelector('.text-container-scroll');
