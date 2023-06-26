@@ -584,6 +584,20 @@ img {
   text-align: center;
   white-space: nowrap
 }
+.text-container-scroll {
+  opacity: 0;
+  transform: translate3d(0, 50px, 0); /* Erhöhen Sie den Abstand, den das Element während der Animation zurücklegt */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.text-container-scroll.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.text-container-scroll {
+  opacity: 0;
+  transform: translateY(100px);
+}
 
 .wtf-scrolling.top {
   top: 0;
@@ -1398,6 +1412,10 @@ img {
     margin-top: 0;
     border-width: .5vw
   }
+  .scroll-section-border {
+    z-index: 1;
+  }
+  
 
   .mega-title.smaller {
     font-size: 15vw;

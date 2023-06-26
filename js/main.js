@@ -73,6 +73,16 @@ window.addEventListener('DOMContentLoaded', function() {
 
   customCursor.style.display = 'block';
 });
+var controller = new ScrollMagic.Controller();
+
+var tween = gsap.to(".text-container-scroll", {autoAlpha: 1, y: 0, duration: 0.1});
+
+var scene = new ScrollMagic.Scene({triggerElement: ".scroll-section-border", duration: 300, reverse: true})
+  .setTween(tween)
+  .addTo(controller);
+
+
+var tween = gsap.to(".text-container-scroll", 1, {autoAlpha: 1, y: 0});
 
 // window.addEventListener('scroll', function () {
 //   var textContainer = document.querySelector('.text-container-scroll');
